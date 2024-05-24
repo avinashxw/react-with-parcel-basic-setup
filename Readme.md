@@ -1,10 +1,10 @@
 mkdir react-with-parcel
-cd react-with-parcel
-ls
-npm init
+<br/>cd react-with-parcel
+<br/>ls
+<br/>npm init
 
-fill details on prompt in CLI:
-package name: (react-with-parcel)
+<br/>fill details on prompt in CLI:
+`package name: (react-with-parcel)
 version: (1.0.0)
 description: react with parcel basic setup
 entry point: (index.js)
@@ -12,29 +12,29 @@ test command: jest
 git repository:
 keywords: react, parcel, setup
 author: Avinash Wadhawan
-license: (ISC)
-press ^C anytime to quit
+license: (ISC)`
+<br/>press ^C anytime to quit
 
-code .
+<br/>code .
 
-npm install react react-dom
-npm install -D parcel
-touch index.html
-touch App.js
+<br/>npm install react react-dom
+<br/>npm install -D parcel
+<br/>touch index.html
+<br/>touch App.js
 
-open your index.html & type html:5 then press enter; this will provide a basic html setup for you
+<br/>open your index.html & type html:5 then press enter; this will provide a basic html setup for you
 
-in the body of the HTML page update by this:
+<br/>in the body of the HTML page update by this:
 	
-<div id="root"></div>
+<br/><div id="root"></div>
 <script type="module" src="./App.js"></script>
 
-now in App.js add these below lines of code:
+<br/>now in App.js add these below lines of code:
 
-import React from "react";
-import ReactDOM from "react-dom";
+<br/>import React from "react";
+<br/>import ReactDOM from "react-dom";
 
-const App = () => {
+<br/>const App = () => {
     return (
         <>
             <h1>Welcome to basic React.js App setup using Parcel.js as bundler</h1>
@@ -42,25 +42,24 @@ const App = () => {
     )
 }
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+<br/>const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(root);
+<br/>root.render(root);
 
-modify package.json file with below code:
-  "scripts": {
+<br/>modify package.json file with below code:
+<br/>"scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },
 
-touch .gitignore
-touch Readme.md
+<br/>touch .gitignore
+<br/>touch Readme.md
 
-now we're ready to launch our react app using parcel by using below command:
+<br/>now we're ready to launch our react app using parcel by using below command:
 
-npm run start
+<br/>npm run start
 
-
-http://localhost:1234/
+<br/>http://localhost:1234/
 
 <img src="basic-react-wth-parcel.png" title="Basic react.js app with parcel.js" />
